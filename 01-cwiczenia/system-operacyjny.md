@@ -45,7 +45,7 @@
 | Tablica routingu          | ``$ ip route show ``  | what is gateway?!         | 
 | check nameservers (DNS)   | ``$ cat /etc/resolv.conf ``  | which DNS were set | 
 
-### Konfiguracja połączenia sieciowego
+### 1. Konfiguracja połączenia sieciowego
 
 | Parametr | wartość           | komentarzu |
 | ------------- |:-------------:| -----:|
@@ -54,6 +54,16 @@
 | Brama         | 10.0.2.2         | default from route table |
 | DNS 1         | 10.10.4.204      | cat /etc/resolv.conf     |
 | DNS 2         | 1.1.1.1          | nslookup uek.krakow.pl   |
+
+### 2. Konfiguracja połączenia sieciowego (sieć domowa)
+
+| Parametr | wartość           |
+| ------------- |:-------------:|
+| Adres IP      | 10.0.2.15        |
+| Maska podsieci| 10.0.2.15/**24** |
+| Brama         | 10.0.2.2         |
+| DNS 1         | 192.168.1.1      |
+| DNS 2         | 192.168.1.1          |
 
 ### Schemat sieci
 
@@ -67,3 +77,4 @@ aby załączyć obrazek
 
 ![my network](network.png)
 
+### 4. Może się przydać do zabezpieczania sieci. Mam nadzieję, że ten przedmiot umożliwi mi poznanie większej ilości ich zastosowań i pozwoli mi rozwinąć wiedzę w tematyce sieci.
