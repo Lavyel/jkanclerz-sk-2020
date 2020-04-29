@@ -21,14 +21,26 @@
 
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
-|   ``addr``    |                               | infirmacje o adresacji i własnościach interfejsów |
-|               |   ``ip addr``                 | informacja o wszystkich interfejsach              |
-|               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
-|   ``link``    |                               |  |
-|   ``route``   |  | |
-|   ``maddr``   |  | |
-|   ``neigh``   |  | |
-|   ``help``    |  | |
+|   ``addr``    |                               | informacje o adresacji i własnościach interfejsów |
+|               |   ``ip addr``                 | informacja o wszystkich interfejsach |
+|               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie |
+|   ``link``    |                               | zarządza i wyświetla stan wszystkich interfejsów sieciowych |
+|               |   ``ip link``                 | informacja o wszystkich interfejsach |
+|               |   ``ip link show dev em1``    | informacja o konkretnym interfejsie |
+|               |   ``ip -s link``              | wyświetla statystyki interfejsu |
+|   ``route``   |  | wyświetla i zmienia tablice routingu |
+|               |   ``ip route``                | zarządzanie tablicą routingu wewnątrz jądra |
+|   ``maddr``   |  | zarządza i wyświetla adresy IP multicast |
+|               |   ``ip maddr``                | wyświetla informacje o multicascie dla wszystkich urządzeń |
+|               |   ``ip maddr show dev em1``   | wyświetla informacje o multicascie dla konkrentego urządzenia |
+|   ``neigh``   |  | pokazuje tablice ARP dla IPv4 |
+|               |   ``ip neigh``                | wyświetla tablice sąsiedztwa |
+|               |   ``ip neigh show dev em1``   | pokazuje pamięć podręczną ARP dla konkretnego urządzenia |
+|   ``help``    |  | wyświetla listę komend i argumentów dla każdej subkomendy |
+|               |   ``ip help``                 | wyświetla komendy i arguemnty subkomendy ip |
+|               |   ``ip addr help``            | wyświetla komendy i arguemnty subkomendy addr |
+|               |   ``ip link help``            | wyświetla komendy i arguemnty subkomendy link |
+|               |   ``ip neigh help``           | wyświetla komendy i arguemnty subkomendy neigh |
 
 
 ### Zadanie
