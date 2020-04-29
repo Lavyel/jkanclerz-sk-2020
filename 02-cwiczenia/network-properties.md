@@ -99,6 +99,7 @@ Próba połączenia się powiodła.
 
 ### Utrwalenie konfiguracji
 Dlaczego? Jak? Co? :)
+
 Konfiguracja jest utrwalana poprzez modyfikację pliku z konfiguracją sieci. Dzięki utrwaleniu, konfiguracja jest zachowana również po wyłączeniu maszyn.
 
 ### Warto wiedzieć
@@ -106,10 +107,10 @@ Konfiguracja jest utrwalana poprzez modyfikację pliku z konfiguracją sieci. Dz
 -------------------------
 | Parametr | wartość |
 | ------------- |:-------------:|
-| Lokalizacja pliku z konfiguracją sieci| |
-| UP -> Wyłączenie interfejsu sieciowego| |
-| DOWN -> Włączenie interfejsu sieciowego| |
-| Sprawdzenie obecnych parametrów | |
-| lista wszystkich interfejsów | |
-| Które interfejsy jakie porty słuchają | |
+| Lokalizacja pliku z konfiguracją sieci| etc/network/interfaces |
+| UP -> Wyłączenie interfejsu sieciowego| ip link set eth1 down |
+| DOWN -> Włączenie interfejsu sieciowego| ip link set eth1 up |
+| Sprawdzenie obecnych parametrów | vi etc/network/interfaces |
+| lista wszystkich interfejsów | ip addr show |
+| Które interfejsy jakie porty słuchają | netstat |
 
