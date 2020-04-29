@@ -80,21 +80,23 @@ Próba połączenia się nie powiodła.
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 |  
-| IP - address  |  | ip addr add 168.1.0.200/24 dev eth0 |
-| MASKA  |  | |
+| IP - address  | 192.168.8.130 | ip addr add 168.1.0.200/24 dev eth0 |
+| MASKA  | 255.255.255.0 | |
 |   |  | |
 | PC 2  |  | |
-| IP - address  |  | ip addr add 168.1.0.201/24 dev eth0 |
-| MASKA  |  | |
+| IP - address  | 192.168.8.106 | ip addr add 168.1.0.201/24 dev eth0 |
+| MASKA  | 255.255.255.0 | |
 
-Weryfikacja połączenia
+### Weryfikacja połączenia
 
-Polecenie
+#### Polecenie
 ping 168.1.0.200
+
 ping 168.1.0.201
 
-Efekt
+#### Efekt
 Próba połączenia się powiodła.
+
 Próba połączenia się powiodła.
 
 ### Utrwalenie konfiguracji
