@@ -77,7 +77,7 @@ Maska -> 255.255.255.11100000 -> 255.255.255.224 -> /27
 
 
 ## Liczba hostów
-#
+
 | sieć |  liczba   | 
 | ----------- | -----------  |
 | ``10.0.0.0/8``    | ``16777214`` | 
@@ -98,7 +98,7 @@ Mając dany adres hosta i maskę znajdź:
   * liczbę hostów w zadanej podsieci ```2^(32 bity - bity maski maska) - 2 (siec i broadcast)```
   * końcowy zakres adresu hosta w sieci
   * adres rozgłoszeniowy
-##   ## 
+
 
 | Parametr |  wartość   | 
 | ----------- | -----------  |
@@ -113,7 +113,7 @@ Mając dany adres hosta i maskę znajdź:
 ## Zadanie
 
 0. Znajdz wszystkie parametry sieci dla hosta o adresie 172.16.128.64 / 16
-##   
+   
 | Parametr |  wartość   | 
 | ----------- | -----------  |
 | ``ip``    | 172.16.128.64| 
@@ -126,7 +126,7 @@ Mając dany adres hosta i maskę znajdź:
 
 1.
   * Podziel sieć ```192.168.1.0/16``` na 16 równych podsieci
-##   
+   
 | Adres sieci |  zakres hostów   | Adres Rozgłoszeniowy |
 | ----------- | -----------  | ----------- |
 | ``192.168.0.0``    | ``192.168.0.1`` - ``192.168.15.254`` | ``192.168.15.255`` |
