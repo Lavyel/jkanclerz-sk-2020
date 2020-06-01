@@ -34,4 +34,4 @@ Musimy oddać 2 jedynki z maski na rzecz adresów wydzielonych sieci
 | 3         | 192.168.1.128 | 192.168.1.129 | 192.168.1.190 | 192.168.1.191 |
 | 4         | 192.168.1.192 | 192.168.1.193 | 192.168.1.254 | 192.168.1.255 |
 
-
+ddddddddddddd
