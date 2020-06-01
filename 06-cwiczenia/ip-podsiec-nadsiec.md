@@ -5,14 +5,14 @@ adresacja
 -----------------------------------------------------
 | PC     |  interfejs   | adres  |
 | --------- |:-------------| :---------------| 
-| ``PC1``   | enp0s3 |      |
-| ``PC-R-1``| enp0s3 |     |
-| ``PC-R-1``| enp0s8 |      |
-| ``PC-R-2``| enp0s3 |       |
-| ``PC-R-2``| enp0s8  |       |
-| ``PC-R-2``| enp0s9  |     |
-| ``PC-R-2``| enp0s10 |      |
-| ``PC2``   | enp0s3  |     |
+| ``PC1``   | enp0s3 | 192.168.100.101/24     |
+| ``PC-R-1``| enp0s3 |  192.168.200.97/29   |
+| ``PC-R-1``| enp0s8 | 192.168.100.1/24    |
+| ``PC-R-2``| enp0s3 | 192.168.200.98/29      |
+| ``PC-R-2``| enp0s8  | 192.168.0.129/27     |
+| ``PC-R-2``| enp0s9  | 192.168.0.193/27    |
+| ``PC-R-2``| enp0s10 | 192.168.0.65/27     |
+| ``PC2``   | enp0s3  | 192.168.0.130/27   |
 
 routing
 -------
@@ -20,22 +20,22 @@ routing
 | destination | trasa | interfejs  |
 | --------- |:-------------| :---------------| 
 | ``PC1``     |  | |
-| ``default`` |  | enp0s3 ```` |
+| ``default`` | ``ip route add default via 192.168.100.1/24 dev eth0`` | enp0s3 ``ip addr add 192.168.100.101/24 dev eth0`` |
 | ``PC-R-1``  |  |        |
-| ```` |  | enp0s3 |
-| ```` |  | enp0s8 |
+| ``default`` | ``ip route add default via 192.168.200.98/29 dev eth0``  | enp0s3 ``ip addr add 192.168.200.97/29 dev eth0`` |
+| ``default`` | ``ip route add default via 192.168.100.101/24 dev eth0``  | enp0s8 ``ip addr add 192.168.100.1/24 dev eth1`` |
 | mozna dzielic   |  |  |
-| ````  |  | enp0s8  |
-| ```` |  | enp0s8  ```` |
-| ```` |  | enp0s8 ```` |
+| ``192.168.0.64/27``  | ``ip route add 192.168.0.64/27 via 192.168.200.98/29 dev eth1``  | enp0s8  |
+| ``192.168.0.128/27`` | ``ip route add 192.168.0.128/27 via 192.168.200.98/29 dev eth1`` | enp0s8 |
+| ``192.168.0.192/27`` | ``ip route add 192.168.0.192/27 via 192.168.200.98/29 dev eth1``  | enp0s8 |
 | lub za 1 iteracją   |  |  |
-| ````   |  | enp0s8 ````|
+| ``192.168.0.64/27`` ``192.168.0.128/27`` ``192.168.0.192/27``   | ``ip route add 192.168.0.0/24 via 192.168.200.98/29 dev eth1``  | enp0s8|
 | ``PC-R-2``  |  |        |
-| ```` |  | enp0s3 |
-| ```` |  | enp0s3 ```` |
-| ````  |   | enp0s8 |
-| ```` |  | enp0s9 |
-| ```` |  | enp0s10 |
+| ``default`` | ``ip route add default via 192.168.200.97/29 dev eth0``  | enp0s3 ``ip addr add 192.168.200.98/29 dev eth0`` |
+| ``192.168.100.0/24`` | ``ip route add 192.168.100.0/24 via 192.168.200.97/29 dev eth0``  | enp0s3 |
+| ``defaut``  | ``ip route add default via 192.168.0.130/27 dev eth1``  | enp0s8 ``ip addr add 192.168.0.129/27 dev eth1`` |
+| ``default`` | ``ip route add default via 192.168.0.194/27 dev eth2``  | enp0s9 ``ip addr add 192.168.0.193/27 dev eth2`` |
+| ``default`` | ``ip route add default via 192.168.0.66/27 dev eth3``  | enp0s10 ``ip addr add 192.168.0.65/27 dev eth3`` |
 
 
 Zadanie
