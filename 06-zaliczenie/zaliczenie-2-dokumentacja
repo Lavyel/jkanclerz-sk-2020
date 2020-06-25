@@ -13,7 +13,6 @@
 | LAN 9  | 187.24.4.0/26 |
 
 #Adresacja linków pomiędzy routerami
--------------------------
 Router 1
 10.0.10.1
 11.0.11.1
