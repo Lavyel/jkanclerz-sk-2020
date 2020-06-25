@@ -1,6 +1,6 @@
 # Zadanie 2
 
-#Adresy poszczególnych sieci IP
+# Adresy poszczególnych sieci IP
 -------------------------
 | Nazwa sieci | Adres sieci | 
 | ------------- |:-------------:| 
@@ -12,7 +12,7 @@
 | LAN 8  | 187.24.4.64/28 |
 | LAN 9  | 187.24.4.0/26 |
 
-#Adresacja linków pomiędzy routerami
+# Adresacja linków pomiędzy routerami
 Router 1
 10.0.10.1
 11.0.11.1
@@ -25,7 +25,7 @@ Router 3
 11.0.11.2
 12.0.12.1
 
-#Tablice routingów na poszczególnych routerach
+# Tablice routingów na poszczególnych routerach
 Router 1
 187.24.0.0/22 via 10.0.10.2
 187.24.4.64/28 via 10.0.10.2
